@@ -1,12 +1,12 @@
 /** \file lcddemo.c
- *  \brief A simple demo that draws a string and square
+ *  \brief A simple demo that draws a string and circle
  */
 
 #include <libTimer.h>
 #include "lcdutils.h"
 #include "lcddraw.h"
 
-/** Initializes everything, clears the screen, draws "hello" and a square */
+/** Initializes everything, clears the screen, draws "hello" and the circle */
 int
 main()
 {

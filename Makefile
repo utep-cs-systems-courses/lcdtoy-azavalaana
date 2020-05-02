@@ -6,6 +6,7 @@ all:
 	(cd p2swLib; make install)
 	(cd p2sw-demo; make)
 	(cd shape-motion-demo; make)
+	(cd lab3; make)
 
 doc:
 	rm -rf doxygen_docs
@@ -18,5 +19,6 @@ clean:
 	(cd p2sw-demo; make clean)
 	(cd shape-motion-demo; make clean)
 	(cd circleLib; make clean)
-	rm -rf lib h
+	(cd lab3; make clean)
+	rm -rf lib h *~
 	rm -rf doxygen_docs/*

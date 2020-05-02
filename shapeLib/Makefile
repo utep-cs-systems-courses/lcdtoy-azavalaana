@@ -34,10 +34,10 @@ shapedemo3.elf: shapedemo3.o libShape.a
 	$(CC) $(CFLAGS) ${LDFLAGS} $^ -L../lib -lTimer -lLcd -o $@
 
 load: shapedemo.elf
-	msp430loader.sh $^
+	mspdebug rf2500 "prog $^"
 
 load2: shapedemo2.elf
-	msp430loader.sh $^
+	mspdebug rf2500 "prog $^"
 
 load3: shapedemo3.elf
-	msp430loader.sh $^
+	mspdebug rf2500 "prog $^"
